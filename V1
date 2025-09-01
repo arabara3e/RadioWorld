@@ -1,8 +1,120 @@
-Parfait 👌, merci pour la précision.
-Le fait que KYC Corporate soit pilote est un point très important à valoriser dans ton discours : ça montre que vous êtes à l’avant-garde et que votre retour servira de référence pour les autres applications.
 
-Voici comment j’adapterais ton spitch avec ce message clé 👇
 
+🎤 Spitch de présentation
+
+Slide 1 – Titre
+
+> Bonjour à tous, merci de me donner la parole.
+Je vais vous présenter le projet Migration DataHub V1 vers V2 dans le cadre du programme FRCR 701 – KYC Corporate BCEF IT.
+Cette migration est un jalon important pour assurer la continuité des usages data et répondre aux exigences techniques et sécurité du groupe.
+
+
+
+
+---
+
+Slide 2 – Enjeux
+
+> Le DataHub V2 vise à répondre à 3 enjeux majeurs :
+
+
+
+1. Traiter l’obsolescence Hadoop : Hadoop/Hive arrivent en fin de vie et ne sont plus alignés avec la stratégie groupe.
+
+
+2. Répondre à la stratégie Move To Cloud : en basculant sur une solution plus moderne et compatible avec l’écosystème cloud.
+
+
+3. Accélérer les usages Data : simplifier l’accès aux données et améliorer la performance des traitements.
+
+
+
+Ces trois axes sont structurants pour l’architecture globale et pour la sécurité des données.
+
+
+---
+
+Slide 3 – Schéma existant (V1)
+
+> Voici une vue de l’architecture actuelle en DataHub V1.
+Elle repose principalement sur Hadoop (cluster Hive, HDFS, Raw Layer) et intègre différents workflows de collecte, traitements batch et services liés à OneKYC.
+On observe une forte dépendance à des composants en obsolescence, ce qui entraîne des risques en termes de maintenabilité, sécurité et compatibilité future.
+
+
+
+
+---
+
+Slide 4 – Vision cible (V2, TI 2026)
+
+> Dans la cible V2, nous avons une architecture modernisée :
+
+
+
+Starburst/Trino est retenu comme moteur principal de requêtage (via JDBC).
+
+Les connecteurs actuels sont remplacés par des connecteurs Starburst, intégrés dans les jobs DataStage.
+
+Un nouveau serveur ETL dédié est mis en place pour fiabiliser et isoler les traitements.
+
+
+Cela permet une architecture plus modulaire, sécurisée et scalable, tout en s’alignant avec la roadmap Move To Cloud.
+
+
+---
+
+Slide 5 – Différences V1 vs V2
+
+> La différence clé est la sortie de Hadoop/Hive.
+
+
+
+En V1 : on utilisait Hadoop (HDP), Hive, Spark, Raw Layer HDFS.
+
+En V2 : tout bascule vers l’écosystème DMZR + Starburst + DataStage, avec un stockage modernisé (Raw + Refined Layer COS) et une supervision via NG/Splunk/Dynatrace.
+
+
+Le DataHub V2 est donc plus léger, plus sécurisé et permet une meilleure intégration avec le cloud.
+
+
+---
+
+Slide 6 – SATS KYC Corporate
+
+> Voici le SATS qui illustre l’intégration du DataHub V2 dans le SI KYC Corporate.
+L’idée est de montrer que la migration ne se limite pas au back technique, mais impacte aussi les flux métiers KYC : collecte, screening, conformité, GED, etc.
+Ceci est un point clé pour la validation architecture et sécurité.
+
+
+
+
+---
+
+🛡️ Points à insister pour l’audience sécurité/architecture
+
+Réduction des risques : fin de l’obsolescence Hadoop, moins de surface d’attaque.
+
+Meilleure gouvernance data : traçabilité renforcée avec Starburst & DataStage.
+
+Conformité sécurité : architecture revue et validée, alignée avec les standards groupe.
+
+Scalabilité cloud : préparation à une montée en charge et intégration future avec des services cloud natifs.
+
+
+
+---
+
+✅ En conclusion :
+
+> Ce projet de migration est essentiel pour sécuriser les usages data KYC Corporate, moderniser l’architecture et préparer le SI aux futures évolutions cloud.
+Nous sollicitons aujourd’hui vos retours sur l’architecture cible et les points de vigilance sécurité à prendre en compte dans la mise en œuvre.
+
+
+
+
+---
+
+Veux-tu que je te prépare aussi une version courte (2 minutes) pour ton introduction, et une version détaillée (10 minutes)
 
 ---
 
