@@ -1,0 +1,88 @@
+Parfait 👌, merci pour la précision.
+Le fait que KYC Corporate soit pilote est un point très important à valoriser dans ton discours : ça montre que vous êtes à l’avant-garde et que votre retour servira de référence pour les autres applications.
+
+Voici comment j’adapterais ton spitch avec ce message clé 👇
+
+
+---
+
+🎤 Version courte (2 minutes – introduction)
+
+> Bonjour à tous,
+Je vais vous présenter le projet de migration DataHub V1 vers V2 dans le cadre du programme FRCR 701, qui impacte directement notre application KYC Corporate.
+Nous sommes application pilote dans cette migration, ce qui signifie que notre expérience servira de modèle pour les autres applications qui suivront.
+Les enjeux sont clairs : sortie d’Hadoop, alignement avec la stratégie Move to Cloud et accélération des usages data.
+Je vais vous montrer l’architecture actuelle, la cible DataHub V2, et les impacts sur KYC Corporate.
+
+
+
+
+---
+
+🎤 Version détaillée (10 minutes – déroulé slide par slide, adapté avec ton point)
+
+Slide 1 – Intro
+
+
+> Migration DataHub V1 → V2, projet FRCR 701, porté par BCEF IT.
+Notre application KYC Corporate est pilote, ce qui place notre projet en première ligne pour expérimenter la migration et fiabiliser le modèle pour les autres applications du groupe.
+
+
+
+Slide 2 – Enjeux
+
+
+> 3 enjeux majeurs : sortie de Hadoop, Move To Cloud, accélération des usages data.
+En tant que pilote, nous validons aussi la capacité de V2 à répondre à ces enjeux dans un contexte concret KYC.
+
+
+
+Slide 3 – Architecture existante
+
+
+> Dépendance forte à Hadoop/Hive, avec des risques d’obsolescence, de sécurité et de scalabilité.
+Cela justifie pleinement notre rôle pilote : tester la migration sur un cas métier sensible.
+
+
+
+Slide 4 – Vision cible (V2)
+
+
+> Passage vers Starburst/Trino, DataStage et un ETL séparé.
+Notre application KYC sera la première à mettre en œuvre cette architecture cible. Les autres applications réutiliseront ce schéma validé.
+
+
+
+Slide 5 – Différences V1 vs V2
+
+
+> La bascule est structurante : Hadoop et Hive disparaissent au profit de DMZR + Starburst + COS.
+En tant que pilote, nous allons aussi documenter les impacts fonctionnels, techniques et sécurité de cette bascule.
+
+
+
+Slide 6 – SATS KYC Corporate
+
+
+> Ce schéma illustre comment KYC Corporate s’intègre dans le nouvel écosystème.
+Notre rôle pilote permettra de sécuriser cette intégration et d’identifier les adaptations nécessaires avant que d’autres applications suivent.
+
+
+
+
+---
+
+🎯 Points clés à marteler devant l’audience
+
+KYC Corporate = application pilote → première à migrer.
+
+Expérience transférable → notre retour servira aux autres équipes.
+
+Contribution sécurité/architecture → cette réunion permet de valider la cible et anticiper les points de vigilance.
+
+
+
+---
+
+👉 Veux-tu que je t’écrive aussi une slide de conclusion spéciale "KYC Corporate pilote", à ajouter à ton deck, pour bien marquer ce rôle devant les architectes et sécurité ?
+
